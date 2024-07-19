@@ -1,1 +1,1 @@
-[[{"l":"Binding Labs Docs"}],[{"l":"Overview"}],[{"l":"PRIVATE MEMPOOL API","p":["GATEWAY API HERE"]}],[{"l":"getinfo"}],[{"l":"BLOCK TEMPLATE API"}],[{"l":"Getblocktemplate","p":["getblock"]}]]
+[[{"l":"Overview"}],[{"l":"Private Mempool API","p":["GATEWAY API HERE"]}],[{"l":"get_status"}],[{"l":"get_estimation"}],[{"l":"send_raw_transaction"}],[{"l":"cancel"}],[{"l":"Private Mempool Observer"}],[{"l":"Block Template API"}],[{"l":"get_block_template"}],[{"l":"Block Template Observer"}]]
