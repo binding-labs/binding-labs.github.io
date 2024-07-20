@@ -1,6 +1,8 @@
 ---
 order: 100
 label: get_status
+icon: code
+iconAlign: left      
 ---
 
 # get_status
@@ -22,7 +24,7 @@ The `get_status` RPC method provides the latest available information on:
 
 +++ CURL
 ```
-curl -s --data '{"jsonrpc": "2.0","id": "1","method": "get_status"' -H "Content-Type: application/json" -X POST ${URL}```
+curl -s --data '{"jsonrpc": "2.0","id": "1","method": "get_status"' -H "Content-Type: application/json" -H "Authorization: Bearer ${TOKEN}" -X POST ${URL}```
 ```
 +++ Javascript
 Coming soon

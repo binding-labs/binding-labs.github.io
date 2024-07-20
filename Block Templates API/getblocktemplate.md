@@ -1,6 +1,8 @@
 ---
 order: 100
 label: get_block_template
+icon: code
+iconAlign: left      
 ---
 
 The `get_block_template` RPC method exposes a non-canonical, potentially higher-value block template.

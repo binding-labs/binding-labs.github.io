@@ -1,6 +1,8 @@
 ---
 order: 99
 label: get_estimation
+icon: code
+iconAlign: left      
 ---
 
 # get_estimation
@@ -15,7 +17,7 @@ The `get_estimation` RPC method provides the estimated confirmation time (in blo
   "id": 1,
   "method": "get_estimation",
   "params": {
-    "tx": "0x……ff" // Signed raw tx's hex-encoded string
+    "tx": "0x……ff" // Signed raw transaction's hex-encoded string
   }
 }
 ```
@@ -23,7 +25,7 @@ The `get_estimation` RPC method provides the estimated confirmation time (in blo
 
 +++ CURL
 ```
-curl -s --data '{"jsonrpc": "2.0","id": "1","method": "get_estimation","params":{"tx":"0x……ff" }' -H "Content-Type: application/json" -X POST ${URL}```
+curl -s --data '{"jsonrpc": "2.0","id": "1","method": "get_estimation","params":{"tx":"0x……ff" }' -H "Content-Type: application/json" -H "Authorization: Bearer ${TOKEN}" -X POST ${URL}```
 ```
 +++ Javascript
 Coming soon
