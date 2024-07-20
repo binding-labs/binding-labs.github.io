@@ -19,7 +19,7 @@ The `send_raw_transaction` RPC method submits a raw transaction.
   "id": 1,
   "method": "send_raw_transaction",
   "params": {
-    "tx": "0x……ff", // Signed raw tx's hex-encoded string
+    "tx": "0x……ff", // Signed raw transaction hex-encoded string
     "max_block_height": 852971
   }
 }
