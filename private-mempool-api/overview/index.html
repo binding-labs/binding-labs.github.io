@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.774813490868">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.774933131530">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Overview</title>
     <meta name="title" content="Overview">
-    <meta name="description" content="Network">
+    <meta name="description" content="The private mempool API can be used to access non-standard transaction processing and frontrunning protection.">
 
     <!-- Canonical -->
     <link rel="canonical" href="/private-mempool-api/overview/">
@@ -20,21 +20,21 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="/private-mempool-api/overview/">
     <meta property="og:title" content="Overview">
-    <meta property="og:description" content="Network">
+    <meta property="og:description" content="The private mempool API can be used to access non-standard transaction processing and frontrunning protection.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="/private-mempool-api/overview/">
     <meta property="twitter:title" content="Overview">
-    <meta property="twitter:description" content="Network">
+    <meta property="twitter:description" content="The private mempool API can be used to access non-standard transaction processing and frontrunning protection.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.774813490868" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.774933131530" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.774813490868" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.774933131530" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.774813490868" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.774933131530" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -155,6 +155,17 @@
         <span>Overview</span>
     </h1>
 </doc-anchor-target>
+<p>The private mempool API can be used to access non-standard transaction processing and frontrunning protection.</p>
+<p>Unlike the public mempool, the hashrate available for block inclusion (confirmation) is expected to be a small subset of the total global hashrate. In addition, premium fee rate is expected to be applied. This makes using this service highly undesirable for transactions which are not non-standard nor require frontrunning protection.</p>
+<p>Actual block inclusion cannot be guaranteed, however it is possible to timeout or fully cancel a submitted transaction.</p>
+<hr>
+<doc-anchor-target id="status-in-active-development">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#status-in-active-development">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Status: in active development</span>
+    </h2>
+</doc-anchor-target>
+<hr>
 <doc-anchor-target id="endpoints">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#endpoints">#</doc-anchor-trigger>
@@ -177,7 +188,6 @@
 </tbody>
 </table>
 </div>
-<hr>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -192,7 +202,7 @@
 <td>Coming Soon</td>
 </tr>
 <tr>
-<td>Mainnet (beta)</td>
+<td>Mainnet beta (no mining)</td>
 <td>Coming Soon</td>
 </tr>
 <tr>
