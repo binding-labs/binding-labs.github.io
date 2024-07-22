@@ -8,8 +8,7 @@ The private mempool API can be used to access non-standard transaction processin
 
 Unlike the public mempool, the hashrate available for block inclusion (confirmation) is expected to be a small subset of the total global hashrate. In addition, premium fee rate is expected to be applied. This makes using this service highly undesirable for transactions which are not non-standard nor require frontrunning protection.
 
-Actual block inclusion cannot be guaranteed, however it is possible to timeout or fully cancel a submitted transaction. 
-
+Actual block inclusion cannot be guaranteed, however it is possible to timeout or forcefully cancel a submitted transaction. 
 
 ---
 

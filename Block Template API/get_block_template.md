@@ -8,9 +8,9 @@ iconAlign: left
 The `get_block_template` RPC method exposes a non-canonical, potentially higher-value block template.
 
 
-| Name               | Type       | Description                                                                                             |
-|--------------------|------------|---------------------------------------------------------------------------------------------------------|
-| `inclusion_list`   | `[]String` | Array of signed raw transaction in hex-encoded string format, to be forcefully included in the template |
+| Name               | Type       | Description                                                                                              |
+|--------------------|------------|----------------------------------------------------------------------------------------------------------|
+| `inclusion_list`   | `[]String` | Array of signed raw transaction in hex-encoded string format, to be forcefully included in the template. |
 
 
 ### Request body example
