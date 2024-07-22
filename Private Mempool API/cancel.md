@@ -1,5 +1,5 @@
 ---
-order: 97
+order: 96
 label: cancel
 icon: code
 iconAlign: left      
@@ -7,7 +7,13 @@ iconAlign: left
 
 # cancel
 
-The `cancel` RPC method cancels previously submitted transaction.
+The `cancel` RPC method cancels a previously-submitted transaction.
+
+
+| Name    | Type   | Description                                          |
+|---------|--------|------------------------------------------------------|
+| `tx_id` | String | Transaction ID (TXID) in hex-encoded string format.  |
+
 
 ### Request body example
 
@@ -17,7 +23,7 @@ The `cancel` RPC method cancels previously submitted transaction.
   "id": 1,
   "method": "send_raw_transaction",
   "params": {
-    "tx_id": "0x……ff" // Transaction ID (TXID) hex-encoded string
+    "tx_id": "0x……ff"
   }
 }
 ```

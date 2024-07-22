@@ -1,5 +1,5 @@
 ---
-order: 100
+order: 97
 label: get_status
 icon: code
 iconAlign: left      
@@ -7,24 +7,27 @@ iconAlign: left
 
 # get_status
 
-The `get_status` RPC method provides the latest available information on:
-* Current available hashrate.
-* Current number of pending transactions awaiting confirmation.
-* Minimum acceptable transaction fee (sat/byte).
-* Recommended transaction fee (sat/byte) for timely confirmation given the current available hashrate.
+The `get_status` RPC method provides status about a previously-submitted transaction.
+
+| Name    | Type     | Description                                          |
+|---------|----------|------------------------------------------------------|
+| `tx_id` | `String` | Transaction ID (TXID) in hex-encoded string format.  |
 
 ### Request body example
 ```json
 {
   "jsonrpc": "2.0",
   "id": 1,
-  "method": "get_status"
+  "method": "get_status",
+  "params": {
+    "tx_id": "0x……ff"
+  }
 }
 ```
 
 +++ CURL
 ```
-curl -s --data '{"jsonrpc": "2.0","id": "1","method": "get_status"' -H "Content-Type: application/json" -H "Authorization: Bearer ${TOKEN}" -X POST ${URL}```
+curl -s --data '{"jsonrpc": "2.0","id": "1","method": "get_status","params": {"tx_id": "0x……ff"}' -H "Content-Type: application/json" -H "Authorization: Bearer ${TOKEN}" -X POST ${URL}```
 ```
 +++ Javascript
 Coming soon
@@ -34,16 +37,5 @@ Coming soon
 Coming soon
 +++
 ### Response body example
-```json
-{
-  "jsonrpc": "2.0",
-  "id": 1,
-  "error": null,
-  "result": {
-    "available_hashrate": 0.02,
-    "pending_transactions": 47,
-    "minimum_fee": 100,
-    "recommended_fee": 120
-  }
-}
-```
+
+Coming soon 

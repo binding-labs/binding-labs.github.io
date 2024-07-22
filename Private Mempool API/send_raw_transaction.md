@@ -5,11 +5,19 @@ icon: code
 iconAlign: left      
 ---
 
-# get_estimation
-
-
+# send_raw_transaction
 
 The `send_raw_transaction` RPC method submits a raw transaction.
+
+Both Replace by Fee (RBF) and Child Pays for Parent (CPFP) are supported.
+
+### Parameters
+
+| Name               | Type     | Description                                             |
+|--------------------|----------|---------------------------------------------------------|
+| `tx`               | `String` | Signed raw transaction in hex-encoded string format.    |
+| `max_block_height` | `Number` | Max block height to attempt inclusion, cancel otherwise |
+
 
 ### Request body example
 
@@ -19,7 +27,7 @@ The `send_raw_transaction` RPC method submits a raw transaction.
   "id": 1,
   "method": "send_raw_transaction",
   "params": {
-    "tx": "0x……ff", // Signed raw transaction hex-encoded string
+    "tx": "0x……ff",
     "max_block_height": 852971
   }
 }

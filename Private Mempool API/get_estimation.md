@@ -9,6 +9,13 @@ iconAlign: left
 
 The `get_estimation` RPC method provides the estimated confirmation time (in block intervals) for a given transaction, given its fee and the current available hashrate. 
 
+### Parameters
+
+| Name | Type     | Description                                          |
+|------|----------|------------------------------------------------------|
+| `tx` | `String` | Signed raw transaction in hex-encoded string format. |
+ 
+
 ### Request body example
 
 ```json
@@ -17,7 +24,7 @@ The `get_estimation` RPC method provides the estimated confirmation time (in blo
   "id": 1,
   "method": "get_estimation",
   "params": {
-    "tx": "0x……ff" // Signed raw transaction's hex-encoded string
+    "tx": "0x……ff"
   }
 }
 ```

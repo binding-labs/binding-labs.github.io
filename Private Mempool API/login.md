@@ -9,6 +9,13 @@ The `login` RPC method initiates an authenticated session using a JSON Web Token
 
 For signup inquiries, please contact us via onboard@bindinglabs.io
 
+### Parameters
+
+| Name       | Type     | Description |
+|------------|----------|-------------|
+| `user`     | `String` | Username    |
+| `password` | `String` | Password    |
+
 ### Request body example
 ```json
 {
@@ -24,7 +31,7 @@ For signup inquiries, please contact us via onboard@bindinglabs.io
 
 +++ CURL
 ```
-curl -s --data '{"jsonrpc": "2.0","id": "1","method": "login"' -H "Content-Type: application/json" -X POST ${URL}```
+curl -s --data '{"jsonrpc": "2.0","id":"1","method":"login","params":{"username":"user","password":"pw"}}' -H "Content-Type: application/json" -X POST ${URL}```
 ```
 +++ Javascript
 Coming soon
